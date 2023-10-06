@@ -1,91 +1,91 @@
 let tasks = `[{ 
 
-     taskName: "vet", 
+     "taskName": "vet", 
     
-     image: "Images/baghira.jpeg", 
+     "image": "Images/baghira.jpeg", 
     
-     description: "Go to the vet with Baghira", 
+     "description": "Go to the vet with Baghira", 
     
-     importance: 0    
+     "importance": "0"    
     
 },{ 
 
-     taskName: "shopping", 
+     "taskName": "shopping", 
         
-     image: "Images/shopping.jpg", 
+     "image": "Images/shopping.jpg", 
         
-     description: "Go shopping, enjoy yourself.", 
+     "description": "Go shopping, enjoy yourself.", 
         
-     importance: 0    
+     "importance": "0"    
         
 },{ 
 
-     taskName: "dry-cleaning", 
+     "taskName": "dry-cleaning", 
             
-     image: "Images/coat.jpg", 
+     "image": "Images/coat.jpg", 
             
-     description: "Take fur coat to the dry-cleaning.", 
+     "description": "Take fur coat to the dry-cleaning.", 
             
-     importance: 0    
+     "importance": "0"    
             
 },{ 
 
-     taskName: "groceries", 
+     "taskName": "groceries", 
                 
-     image: "Images/groceries.jpg", 
+     "image": "Images/groceries.jpg", 
                 
-     description: "Shop for weekly groceries at Billa and Hofer.", 
+     "description": "Shop for weekly groceries at Billa and Hofer.", 
                 
-     importance: 0    
+     "importance": "0"    
                 
 },{ 
 
-     taskName: "Cat Food", 
+     "taskName": "Cat Food", 
                     
-     image: "Images/catfood.jpg", 
+     "image": "Images/catfood.jpg", 
                     
-     description: "Pick up cat food from the P.O. Box.", 
+     "description": "Pick up cat food from the P.O. Box.", 
                     
-     importance: 0    
+     "importance": "0"    
                     
 },{ 
 
-     taskName: "groom Merlin", 
+     "taskName": "groom Merlin", 
                         
-     image: "Images/merlin.jpeg", 
+     "image": "Images/merlin.jpeg", 
                         
-     description: "Groom Merlins fur.", 
+     "description": "Groom Merlins fur.", 
                         
-     importance: 0    
+     "importance": "0"    
                         
 },{ 
 
-     taskName: "groom Pearl", 
+     "taskName": "groom Pearl", 
                             
-     image: "Images/pearl.jpeg", 
+     "image": "Images/pearl.jpeg", 
                             
-     description: "Groom Pearls fur.", 
+     "description": "Groom Pearls fur.", 
                             
-     importance: 0    
+     "importance": "0"    
                             
 },{ 
 
-     taskName: "nail clipping", 
+     "taskName": "nail clipping", 
                                 
-     image: "Images/felia.jpeg", 
+     "image": "Images/felia.jpeg", 
                                 
-     description: "Shorten Felias claws.", 
+     "description": "Shorten Felias claws.", 
                                 
-     importance: 0    
+     "importance": "0"    
                                 
 },{ 
 
-     taskName: "learning", 
+     "taskName": "learning", 
                                     
-     image: "Images/learning.jpg", 
+     "image": "Images/learning.jpg", 
                                     
-     description: "Learn coding for Code-factory Full-Stack Course.", 
+     "description": "Learn coding for Code-factory Full-Stack Course.", 
      
-     importance: 0    
+     "importance": "0"    
                                     
-;}]`
+}]`;
