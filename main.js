@@ -1,56 +1,55 @@
 let newTasks = JSON.parse(tasks);
+console.log(newTasks)
+// converted string to object
 
-    let resultDiv = document.getElementById("result");
-    resultDiv.innerHTML=""
-    
-
-
-newTasks.forEach(thing => {
-
-    let backgroundColor;
-    if (thing.importance >= 0 && thing.importance <= 1) {
-        backgroundColor = "success"  
-    }
-    else if (thing.importance >= 2 && thing.importance <= 3) {
-        backgroundColor = "warning"  
-    }
-    else if (thing.importance >= 4 && thing.importance <= 5) {
-        backgroundColor = "danger"  
-    }
-
-    resultDiv.innerHTML += `
+newTasks.forEach(task => {
+    document.getElementById("result").innerHTML += `
     <div class="card">
-  <img src="${thing.image}" class="card-img-top" alt="${thing.taskName}">
+  <img src="${task.image}" class="card-img-top" alt="${task.taskName}">
   <div class="card-body">
-    <h5 class="card-title">${thing.taskName}</h5>
-    <p class="card-text">${thing.description}</p>
-    <span>Importance</span>
-    <button class="btn btn-primary btn-${backgroundColor} numberButton"> <span class="number">${thing.importance}</span></button>
+    <h5 class="card-title">${task.taskName}</h5>
+    <p class="card-text">${task.description}</p>
+    <span>Priority:</span>
+    <button class="btn btn-success myButton" id="changeColor"> <span id="clicked">${task.importance}</span></button>
   </div>
 </div>
-    `;
+    `   
 });
 
 
 
 
-let buttons = document.querySelectorAll(".numberButton");
-
-
-buttons.forEach((button,i) => {
-    button.addEventListener("click",function() {
-        increaseNumber(i)
-        
-    })
-});
-
-function increaseNumber(i) {
-if (newTasks[i].importance < 5) {
+    function changecolor(i) {
+        const buttons = document.querySelectorAll(".myButton");
+        if (newTasks[i].importance >=0 && newTasks[i].importance <= 1) {
+            buttons[i].classList.remove("btn-primary");
+            buttons[i].classList.add("btn-success");
+        } else if (newTasks[i].importance >= 2 && newTasks[i].importance <= 3) {
+            buttons[i].classList.remove("btn-primary", "btn-success");
+            buttons[i].classList.add("btn-warning");
+        } else if (newTasks[i].importance >= 4 && newTasks[i].importance <= 5) {
+            buttons[i].classList.remove("btn-primary", "btn-success", "btn-warning");
+            buttons[i].classList.add("btn-danger");
+        }
+    }
     
 
-    newTasks[i].importance++;
-    document.querySelectorAll(".number")[i].innerText = newTasks[i].importance;
-}
 
+let buttons = document.querySelectorAll(".myButton");
+
+buttons.forEach((button,i) => {
+    button.addEventListener("click", function () {
+        increaseClick(i);
+        
+    })
+    
+});
+
+
+function increaseClick(i) {
+    if (newTasks[i].importance < 5){
+    newTasks[i].importance++; }
+    document.querySelectorAll(".myButton span")[i].innerHTML = newTasks[i].importance;
+    changecolor(i)
     
 }
