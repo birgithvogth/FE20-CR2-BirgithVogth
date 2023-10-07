@@ -12,7 +12,7 @@ let tasks = `[{
 
      "taskName": "shopping", 
         
-     "image": "Images/shopping.jpg", 
+     "image": "Images/shopping.jpeg", 
         
      "description": "Go shopping, enjoy yourself.", 
         
@@ -22,7 +22,7 @@ let tasks = `[{
 
      "taskName": "dry-cleaning", 
             
-     "image": "Images/coat.jpg", 
+     "image": "Images/coat.jpeg", 
             
      "description": "Take fur coat to the dry-cleaning.", 
             
@@ -32,9 +32,9 @@ let tasks = `[{
 
      "taskName": "groceries", 
                 
-     "image": "Images/groceries.jpg", 
+     "image": "Images/groceries.jpeg", 
                 
-     "description": "Shop for weekly groceries at Billa and Hofer.", 
+     "description": "Shop for weekly groceries.", 
                 
      "importance": "0"    
                 
@@ -42,7 +42,7 @@ let tasks = `[{
 
      "taskName": "Cat Food", 
                     
-     "image": "Images/catfood.jpg", 
+     "image": "Images/catfood.jpeg", 
                     
      "description": "Pick up cat food from the P.O. Box.", 
                     
@@ -82,7 +82,7 @@ let tasks = `[{
 
      "taskName": "learning", 
                                     
-     "image": "Images/learning.jpg", 
+     "image": "Images/learning.jpeg", 
                                     
      "description": "Learn coding for Code-factory Full-Stack Course.", 
      

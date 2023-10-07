@@ -1,33 +1,58 @@
 *{margin: 0%;
-       padding: 0%;
+ padding: 0%;
 }
+.herosection {
 
+              /* Sizing */
+              width: 100vw;
+              height: 40vh;
+              background-image: url(Images/heropic.jpeg);
+              
+              /* Flexbox stuff */
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              
+              /* Text styles */
+              font-family: Great Vibes;
+              text-align: center;
+              color: white;
+
+              h2{
+                     font-size: 5rem;
+              }
+              
+          }
 body{
-    background-color: black;
- }
-// .herosection {
-//     display: flex;
-//     position: relative;
-//     justify-content: center;
-//     align-items: center;
-    
-    
-
-//     h2{
-//         position: absolute;
-//         text-align: center;
-        
-        
-//     }
-
-// }
-// .container {
-//     display: grid;
-//     grid-template-columns: repeat(3, 100%);
-//     gap: 20px;
-//     margin: 10px;
-    
-// }
-#result{
-
+       background-color: rgb(68, 68, 68);
+       font-family: 'Times New Roman', Times, serif;
 }
+
+.card {
+       margin-top: 1rem;
+       margin-bottom: 3rem;
+       padding-left: 0;
+       padding-right: 0;
+       background-color: rgb(232, 230, 230);
+
+       }
+
+.navbar{
+       background-color: rgb(250, 250, 250);
+}
+
+#buttoni{
+       background-color: rgb(250, 250, 250);
+       margin-left: 90px;
+       margin-top: 1rem;
+       padding-left: 2%;
+       padding-right: 20px;
+       padding-top: 4px;
+       padding-bottom: 4px;
+       font-size: small;
+}
+
+
+ 
+   
+
