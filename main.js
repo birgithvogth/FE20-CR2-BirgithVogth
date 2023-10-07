@@ -24,14 +24,12 @@ newTasks.forEach(task => {
 // for the color change 
     function changecolor(i) {
         const buttons = document.querySelectorAll(".myButton");
-        if (newTasks[i].importance >=0 && newTasks[i].importance <= 1) {
-            buttons[i].classList.remove("btn-primary");
-            buttons[i].classList.add("btn-success");
-        } else if (newTasks[i].importance >= 2 && newTasks[i].importance <= 3) {
-            buttons[i].classList.remove("btn-primary", "btn-success");
+        if 
+        (newTasks[i].importance >= 2 && newTasks[i].importance <= 3) {
+            buttons[i].classList.remove( "btn-success");
             buttons[i].classList.add("btn-warning");
         } else if (newTasks[i].importance >= 4 && newTasks[i].importance <= 5) {
-            buttons[i].classList.remove("btn-primary", "btn-success", "btn-warning");
+            buttons[i].classList.remove("btn-success", "btn-warning");
             buttons[i].classList.add("btn-danger");
         }
     }
