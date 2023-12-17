@@ -3,11 +3,16 @@
   padding: 0%;
 }
 
+body {
+  background-image: linear-gradient(71deg, #080509, #1a171c, #080509);
+  font-family: "Times New Roman", Times, serif;
+}
+
 .herosection {
   /* Sizing */
   width: 100vw;
-  height: 40vh;
-  background-image: url(Images/heropic.jpeg);
+  height: 50vh;
+  background-image: url(Images/bg.jpeg);
   /* Flexbox stuff */
   display: flex;
   justify-content: center;
@@ -21,30 +26,46 @@
   font-size: 5rem;
 }
 
-body {
-  background-color: rgb(68, 68, 68);
-  font-family: "Times New Roman", Times, serif;
-}
-
-.card {
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-  padding-left: 0;
-  padding-right: 0;
-  background-color: rgb(232, 230, 230);
-}
-
-.navbar {
-  background-color: rgb(250, 250, 250);
-}
-
 #buttoni {
-  background-color: rgb(250, 250, 250);
+  background-color: rgba(255, 255, 255, 0.792);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   margin-left: 90px;
   margin-top: 1rem;
   padding-left: 2%;
   padding-right: 20px;
   padding-top: 4px;
   padding-bottom: 4px;
+  border-radius: 10px;
+  border: 0;
   font-size: small;
+}
+
+.nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.549);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  height: 4.5rem;
+  z-index: 1;
+}
+.nav a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: rgb(88, 87, 87);
+}
+
+.logo {
+  width: 10%;
+  height: 10%;
 }/*# sourceMappingURL=styles.css.map */
